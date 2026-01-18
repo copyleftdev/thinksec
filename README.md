@@ -24,14 +24,20 @@ thinksec/
 ├── README.md              # You are here
 ├── CONTRIBUTING.md        # How to contribute
 ├── templates/
-│   └── skill-template.md  # Template for new skills
-└── skills/
-    ├── offensive/         # Red team, pentesting, exploitation
-    ├── defensive/         # Blue team, detection, response
-    ├── analysis/          # Malware, forensics, reverse engineering
-    ├── intel/             # Threat intelligence, attribution
-    ├── engineering/       # Secure development, architecture
-    └── operations/        # IR, SOC, hunting
+│   ├── skill-template.md  # Template for new skills
+│   └── tool-template.md   # Template for new tools
+├── skills/                # How to think (procedural knowledge)
+│   ├── offensive/         # Red team, pentesting, exploitation
+│   ├── defensive/         # Blue team, detection, response
+│   ├── analysis/          # Malware, forensics, reverse engineering
+│   ├── intel/             # Threat intelligence, attribution
+│   ├── engineering/       # Secure development, architecture
+│   └── operations/        # IR, SOC, hunting
+└── tools/                 # Deep dives (philosophy, math, research)
+    ├── fuzzing/           # OSS-Fuzz, libFuzzer, syzkaller
+    ├── sanitizers/        # ASan, MSan, TSan, UBSan
+    ├── cryptography/      # Tink, Wycheproof
+    └── network-security/  # Tsunami
 ```
 
 ## Skill File Format
@@ -84,6 +90,25 @@ Skills for secure development, cryptography, architecture, and tooling.
 
 ### Operations
 Skills for incident response, SOC operations, threat hunting, and security operations.
+
+## Tools
+
+Beyond skills, thinksec includes **tool files** — deep documentation capturing the philosophy, mathematics, and research behind security tools.
+
+| Category | Tools |
+|----------|-------|
+| **Fuzzing** | OSS-Fuzz, libFuzzer, syzkaller |
+| **Sanitizers** | AddressSanitizer |
+| **Cryptography** | Tink, Wycheproof |
+| **Network Security** | Tsunami |
+
+Each tool file includes:
+- **Philosophy** — The core insight that makes it work
+- **Theoretical Foundations** — CS, math, security concepts
+- **Academic Papers** — Research behind the tool
+- **Architecture** — How it works internally
+
+See [tools/README.md](tools/README.md) for details.
 
 ## Principles
 
